@@ -1,0 +1,9 @@
+<html>
+  <body>
+     <%= form_tag("/cipher/create", :method => "put") do %>
+        <%= label_tag(:q, "Enter cipher:") %>
+        <%= text_field_tag("toencrypt") %>
+        <%= submit_tag("Encipher") %>
+     <% end %>
+  </body>
+</html>

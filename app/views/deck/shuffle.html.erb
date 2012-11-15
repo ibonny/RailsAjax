@@ -1,0 +1,20 @@
+<html>
+<body>
+<%= @message %>
+<table>
+<tr>
+<% 
+@counter = 1
+@deck.each do |c| 
+%>
+  <td><%= c.to_s %></td>
+  <% @counter += 1 %>
+  <% if @counter == 14 %>
+     </tr><tr>
+     <% @counter = 1 %>
+  <% end %>
+<% end %>
+</table><br>
+Ok, this is a test.<br>
+</body>
+</html>
